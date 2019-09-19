@@ -1,0 +1,12 @@
+body {
+    background-image: url("https://static.planetminecraft.com/files/resource_media/screenshot/1205/2012-02-01_152607_1354193.jpg"); 
+    background-size: 250px;
+    color: blue;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+    font-family: "comic sans ms";
+    display: flex;
+}
