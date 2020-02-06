@@ -1,22 +1,31 @@
 public class Komplex {
-    private double a;
-    private double b;
+    private double re;
+    private double im;
 
-    public Komplex(double re, double im) {
-        this.a = re;
-        this.b = im;
+    public Komplex(double rea, double ima) {
+        this.re = rea;
+        this.im = ima;
     }
 
-    public void Add() {
-        Komplex z1 = new Komplex(a, b);
-        Komplex z2 = new Komplex(c, d);
+    public double getImaginary() {
+        return im;
     }
 
-    public double getA() {
-        return a;
+    public double getReal() {
+        return re;
     }
 
-    public double getB() {
-        return b;
+    public Komplex Add(Komplex b) {
+        double real = this.getReal()+b.getReal();
+        double imag = this.getImaginary()+b.getImaginary();
+
+
+        return new Komplex(im, re);
     }
+
+    @Override
+    public String toString(){
+        return "Tal = " + re + ", " + im + "i";
+    }
+
 }
